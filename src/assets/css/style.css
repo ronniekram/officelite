@@ -2,6 +2,11 @@ body {
   font-family: 'Kumbh Sans';
 }
 
+svg {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
 #signup {
   /* background-image: url(../svgs/sign-up/bg-pattern-side.svg);
   background-repeat: no-repeat;
