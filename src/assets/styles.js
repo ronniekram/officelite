@@ -13,13 +13,15 @@ const info = {
 };
 
 const countdown = {
-
+  box: 'w-1/4 flex flex-row',
+  time: 'bg-custom-blue-lt text-3xl text-center text-custom-blue-dk rounded-lg w-1/4 p-1 m-1',
+  span: 'text-base text-custom-grey tracking-wide'
 };
 
 const signup = {
   container: 'z-0',
   bg: 'sm:bg-custom-dark bg-transparent sm:w-1/5 w-full sm:h-screen h-1/2 fixed sm:-right-0',
-  img: 'text-dark sm:text-white stroke-current fill-current w-9/12 fixed overflow-hidden',
+  img: 'text-custom-dark sm:text-white stroke-current fill-current w-9/12 fixed overflow-hidden',
   house: 'flex flex-row justify-items-center items-center'
 };
 
@@ -30,7 +32,7 @@ const button = {
 };
 
 const form = {
-  content: 'form-width bg-white flex flex-col flex-nowrap content-evenly px-6 py-2 text-sm font-kuhbm rounded-2xl shadow-2xl z-10 right-32 mt-36 absolute',
+  content: 'form-width bg-white flex flex-col flex-nowrap content-evenly px-6 py-2 text-sm font-kuhbm rounded-2xl shadow-3xl z-10 right-32 mt-36 absolute',
 };
 
 const input = {

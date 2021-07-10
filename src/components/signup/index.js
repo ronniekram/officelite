@@ -1,7 +1,7 @@
 import React from 'react';
 import UserForm from './UserForm';
 import Info from './Info';
-// will need to import countdown from footer folder
+import Countdown from '../counter/Countdown';
 import { signup } from '../../assets/styles';
 import image from '../../assets/svgs/sign-up/bg-pattern-side.svg';
 
@@ -14,8 +14,15 @@ const SignUp = () => {
 
       <article className={signup.house}>
         <section>
-          <Info />
+          <div>
+            <Info />
+          </div>
+          
+          <div>
+            <Countdown />
+          </div>
         </section>
+
         <section>
           <UserForm />
         </section>
