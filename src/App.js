@@ -1,10 +1,11 @@
 import React from 'react';
+import { home } from './assets/styles';
 
 const App = () => {
   return (
-    <div>
-      
-    </div>
+    <main>
+
+    </main>
   )
 };
 
