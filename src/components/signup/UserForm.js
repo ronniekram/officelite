@@ -19,39 +19,73 @@ const UserForm = () => {
     })
   }, [setError]);
 
+
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className={form.content}>
-      <input 
-        type="text" 
-        placeholder="Name" {...register("name", {required: true})} 
-      />
-      {errors.lastName && errors.lastName.types && (
-        <p>{errors.lastName.types.required}</p>
-      )}
-   
-      <input 
-        type="email" 
-        placeholder="Email" {...register("email", {required: true})} 
-      />
+    <section className={form.content}>
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <div className={form.divide}>
+          <input 
+            type="text" 
+            placeholder="Name" 
+            {...register("name", {required: true})}
+            className={input.field} 
+          />
+        </div>
 
-      <select {...register("Basic Pro Back Free", { required: true })}>
-        <option value="basic">Basic Pro Pack Free</option>
-        <option value="pro">Pro Pack $9.99</option>
-        <option value="ultimate">Ultimate Pack $19.99</option>
-      </select>
+        <hr className="border-t-2 p-1" />
 
-      <input 
-        type="tel" 
-        placeholder="Phone Number" {...register("Phone", {required: true})} 
-      />
+        <div className={form.divide}>
+          <input 
+            type="email" 
+            placeholder="Email Address" 
+            {...register("email", {required: true})}
+            className={input.field}  
+          />
+        </div>
 
-      <input 
-        type="text" 
-        placeholder="Company" {...register("company", {required: true})} 
-      />
+        <hr className="border-t-2 p-1" />
 
-      <input type="submit" value="Get on the list" />
-  </form>
+        <div className={form.divide}>
+          <select 
+            {...register("Basic Pack - Free", { required: true })}
+          className={input.field} 
+          >
+            <option value="basic">Basic Pack Free</option>
+            <option value="pro">Pro Pack $9.99</option>
+            <option value="ultimate">Ultimate Pack $19.99</option>
+          </select>
+        </div>
+
+        <hr className="border-t-2 p-1" />
+
+        <div className={form.divide}>
+          <input 
+            type="tel" 
+            placeholder="Phone Number" 
+            {...register("Phone", {required: true})}
+            className={input.field} 
+          />
+        </div>
+
+        <hr className="border-t-2 p-1" />
+
+        <div className={form.divide}>
+          <input 
+            type="text" 
+            placeholder="Company" 
+            {...register("company", {required: true})}
+            className={input.field}  
+          />
+        </div>
+
+        <hr className="border-t-2 p-1" />
+
+        <input 
+          type="submit" 
+          value="Get on the list"
+          className={button.one} />
+    </form>
+  </section>
   )
 };
 

@@ -274,6 +274,7 @@ module.exports = {
         '"Courier New"',
         'monospace',
       ],
+      kuhbm: "'Kumbh Sans'"
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],

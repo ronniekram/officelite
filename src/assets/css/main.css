@@ -22767,6 +22767,10 @@ video {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.font-kuhbm {
+  font-family: 'Kumbh Sans';
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -52945,6 +52949,10 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .sm\:font-kuhbm {
+    font-family: 'Kumbh Sans';
+  }
+
   .sm\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -83049,6 +83057,10 @@ video {
 
   .md\:font-mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .md\:font-kuhbm {
+    font-family: 'Kumbh Sans';
   }
 
   .md\:text-xs {
@@ -113157,6 +113169,10 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .lg\:font-kuhbm {
+    font-family: 'Kumbh Sans';
+  }
+
   .lg\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -143263,6 +143279,10 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .xl\:font-kuhbm {
+    font-family: 'Kumbh Sans';
+  }
+
   .xl\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -173367,6 +173387,10 @@ video {
 
   .\32xl\:font-mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .\32xl\:font-kuhbm {
+    font-family: 'Kumbh Sans';
   }
 
   .\32xl\:text-xs {
