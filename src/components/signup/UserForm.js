@@ -1,6 +1,5 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { form, input, button } from '../../assets/styles';
 
 const UserForm = () => {
   const { register, handleSubmit, setError, formState: { errors } } = useForm();
@@ -21,34 +20,31 @@ const UserForm = () => {
 
 
   return (
-    <section className={form.content}>
+    <section>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className={form.divide}>
+        <div>
           <input 
             type="text" 
             placeholder="Name" 
             {...register("name", {required: true})}
-            className={input.field} 
           />
         </div>
 
         <hr className="border-t-2 p-1" />
 
-        <div className={form.divide}>
+        <div>
           <input 
             type="email" 
             placeholder="Email Address" 
             {...register("email", {required: true})}
-            className={input.field}  
           />
         </div>
 
         <hr className="border-t-2 p-1" />
 
-        <div className={form.divide}>
+        <div>
           <select 
             {...register("Basic Pack - Free", { required: true })}
-          className={input.field} 
           >
             <option value="basic">Basic Pack Free</option>
             <option value="pro">Pro Pack $9.99</option>
@@ -58,23 +54,21 @@ const UserForm = () => {
 
         <hr className="border-t-2 p-1" />
 
-        <div className={form.divide}>
+        <div>
           <input 
             type="tel" 
             placeholder="Phone Number" 
             {...register("Phone", {required: true})}
-            className={input.field} 
           />
         </div>
 
         <hr className="border-t-2 p-1" />
 
-        <div className={form.divide}>
+        <div>
           <input 
             type="text" 
             placeholder="Company" 
             {...register("company", {required: true})}
-            className={input.field}  
           />
         </div>
 
@@ -83,7 +77,7 @@ const UserForm = () => {
         <input 
           type="submit" 
           value="Get on the list"
-          className={button.one} />
+         />
     </form>
   </section>
   )

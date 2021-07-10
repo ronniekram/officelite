@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { countdown } from '../../assets/styles';
 
 const Countdown = () => {
   const future = new Date(Date.now() + 2592000000);
@@ -11,10 +10,10 @@ const Countdown = () => {
     seconds: 0
   });
 
-  useEffect(() => {
-    setInterval(() => setTime(), 1000)
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  // useEffect(() => {
+  //   setInterval(() => setTime(), 1000)
+  // // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, []);
 
   const setTime = () => {
     if (future) {
@@ -50,24 +49,24 @@ const Countdown = () => {
   };
 
   return (
-    <article >
+    <article>
       <h1>COMING {future.toDateString().toUpperCase()}</h1>
-      <div className={countdown.box}>
-        <div className={countdown.time}>
-          {date.days} <br />
-          <span className={countdown.span}>days</span>
+      <div>
+        <div>
+          {date.days}
+          <span>days</span>
         </div>
-        <div className={countdown.time}>
-          {date.hours} <br />
-          <span className={countdown.span}>hours</span>
+        <div>
+          {date.hours}
+          <span>hours</span>
         </div>
-        <div className={countdown.time}>
-          {date.minutes} <br />
-          <span className={countdown.span}>minutes</span>
+        <div>
+          {date.minutes}
+          <span>minutes</span>
         </div>
-        <div className={countdown.time}>
-          {date.seconds} <br />
-          <span className={countdown.span}>seconds</span>
+        <div>
+          {date.seconds}
+          <span>seconds</span>
         </div>
       </div>
     </article>

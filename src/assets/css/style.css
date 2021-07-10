@@ -7,6 +7,11 @@ svg {
   stroke: currentColor;
 }
 
+#signup {
+  background-image: url(../svgs/sign-up/bg-pattern-side.svg);
+  background-size: 25%;
+}
+
 .form-width {
   width: 25%;
 }
