@@ -4,7 +4,6 @@ const Countdown = () => {
   // date 30 days from now
   const future = new Date(Date.now() + 2592000000).getTime();
   // const [future, setFuture] = useState(new Date(Date.now() + 2592000000).getTime());
-
   const [date, setDate] = useState({
     days: 0,
     hours: 0,
@@ -18,7 +17,7 @@ const Countdown = () => {
 
   const setTime = () => {
     if (future) {
-      const current = new Date().getTime;
+      const current = new Date().getTime();
       const waitTime = future - current;
 
       let days = Math.floor(waitTime / (1000 * 60 * 60 * 24));
@@ -31,7 +30,7 @@ const Countdown = () => {
 
       const addZeroes = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-      days = `${days}`;
+      // days = `${days}`;
       if (addZeroes.includes(hours)) {
         hours = `0${hours}`;
       } else if (addZeroes.includes(minutes)) {
@@ -40,10 +39,16 @@ const Countdown = () => {
         seconds = `0${seconds}`;
       }
 
-      setDate({ days: days, hours: hours, minutes, seconds });
+      setDate({ 
+        days: days, 
+        hours: hours, 
+        minutes: minutes, 
+        seconds: seconds 
+      });
     }
   };
 
+    console.log(date)
 
   return (
     <article>
