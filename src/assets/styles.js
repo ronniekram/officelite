@@ -11,6 +11,7 @@ const countdown = {
 };
 
 const signup = {
+  container: '',
   bg: 'sm:bg-custom-dark bg-transparent sm:w-1/5 w-full sm:h-screen h-1/2 fixed sm:-right-0',
   img: 'text-dark sm:text-white stroke-current fill-current w-9/12 fixed overflow-hidden'
 };
@@ -22,7 +23,7 @@ const button = {
 };
 
 const form = {
-
+  content: ''
 };
 
 const input = {
