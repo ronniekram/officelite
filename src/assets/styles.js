@@ -1,5 +1,5 @@
 const home = {
-  main: ''
+  main: 'bg-gray-50 sm:bg-white'
 };
 
 const footer = {
@@ -8,6 +8,11 @@ const footer = {
 
 const countdown = {
 
+};
+
+const signup = {
+  bg: 'sm:bg-custom-dark bg-transparent sm:w-1/5 w-full sm:h-screen h-1/2 fixed sm:-right-0',
+  img: 'text-dark sm:text-white stroke-current fill-current w-9/12 fixed overflow-hidden'
 };
 
 const button = {
@@ -34,6 +39,7 @@ export {
   home,
   footer,
   countdown,
+  signup,
   button,
   form,
   input,

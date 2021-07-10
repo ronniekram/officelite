@@ -1,3 +1,17 @@
 body {
   font-family: 'Kumbh Sans';
 }
+
+#signup {
+  /* background-image: url(../svgs/sign-up/bg-pattern-side.svg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+
+@media screen and (max-width: 375px) {
+  #signup {
+    background-image: url(../svgs/sign-up/bg-pattern-side.svg);
+    background-size: 25%;
+  }
+}
