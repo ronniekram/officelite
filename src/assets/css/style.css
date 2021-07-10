@@ -7,12 +7,9 @@ svg {
   stroke: currentColor;
 }
 
-#signup {
-  /* background-image: url(../svgs/sign-up/bg-pattern-side.svg);
-  background-repeat: no-repeat;
-  background-size: cover; */
+.form-width {
+  width: 25%;
 }
-
 
 @media screen and (max-width: 375px) {
   #signup {

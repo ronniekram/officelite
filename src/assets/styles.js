@@ -6,6 +6,12 @@ const footer = {
 
 };
 
+const info = {
+  content: '',
+  header: '',
+  paragraph: ''
+};
+
 const countdown = {
 
 };
@@ -23,12 +29,12 @@ const button = {
 };
 
 const form = {
-  content: 'w-96 bg-white flex flex-col flex-nowrap content-evenly px-6 py-2 text-sm font-kuhbm divide-y-8 divide-custom-grey rounded-2xl shadow-2xl z-10 right-24 mt-36 absolute',
+  content: 'form-width bg-white flex flex-col flex-nowrap content-evenly px-6 py-2 text-sm font-kuhbm divide-y-8 divide-custom-grey rounded-2xl shadow-2xl z-10 right-32 mt-36 absolute',
   // divide: 'divide-y-8 divide-custom-grey p-2'
 };
 
 const input = {
-  field: 'p-4 m-1',
+  field: 'p-3.5 m-1',
   filled: '',
   errors: '',
   option: ''
@@ -38,6 +44,7 @@ const input = {
 export {
   home,
   footer,
+  info,
   countdown,
   signup,
   button,
