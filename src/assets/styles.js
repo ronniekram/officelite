@@ -1,5 +1,5 @@
 const home = {
-  main: 'bg-gray-50 sm:bg-white'
+  main: 'bg-gray-50 sm:bg-white flex flex-row justify-center content-center'
 };
 
 const footer = {
@@ -7,9 +7,9 @@ const footer = {
 };
 
 const info = {
-  content: '',
-  header: '',
-  paragraph: ''
+  content: 'info-width font-kuhbm float-left text-custom-grey-dk',
+  header: 'font-bold text-5xl leading-tight',
+  paragraph: 'text-sm tracking-wide py-2.5'
 };
 
 const countdown = {
@@ -19,7 +19,8 @@ const countdown = {
 const signup = {
   container: 'z-0',
   bg: 'sm:bg-custom-dark bg-transparent sm:w-1/5 w-full sm:h-screen h-1/2 fixed sm:-right-0',
-  img: 'text-dark sm:text-white stroke-current fill-current w-9/12 fixed overflow-hidden'
+  img: 'text-dark sm:text-white stroke-current fill-current w-9/12 fixed overflow-hidden',
+  house: 'flex flex-row justify-items-center items-center'
 };
 
 const button = {
@@ -29,8 +30,7 @@ const button = {
 };
 
 const form = {
-  content: 'form-width bg-white flex flex-col flex-nowrap content-evenly px-6 py-2 text-sm font-kuhbm divide-y-8 divide-custom-grey rounded-2xl shadow-2xl z-10 right-32 mt-36 absolute',
-  // divide: 'divide-y-8 divide-custom-grey p-2'
+  content: 'form-width bg-white flex flex-col flex-nowrap content-evenly px-6 py-2 text-sm font-kuhbm rounded-2xl shadow-2xl z-10 right-32 mt-36 absolute',
 };
 
 const input = {

@@ -11,6 +11,10 @@ svg {
   width: 25%;
 }
 
+.info-width {
+  width: 35%;
+}
+
 @media screen and (max-width: 375px) {
   #signup {
     background-image: url(../svgs/sign-up/bg-pattern-side.svg);
