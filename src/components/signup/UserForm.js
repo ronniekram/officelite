@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import Dropdown from './Dropdown';
+import { signup } from '../../assets/styles';
+
+const options = [
+  {type: 'Basic Pack', cost: 'Free'}, 
+  {type: 'Pro Pack', cost: '$9.99'}, 
+  {type: 'Ultimate Pack', cost: '$19.99'}];
 
 const UserForm = () => {
+  const [selected, setSelected] = useState(options[0]);
   const { register, handleSubmit, setError, formState: { errors } } = useForm();
 
   const onSubmit = data => console.log(data);
@@ -21,12 +29,16 @@ const UserForm = () => {
 
   return (
     <section>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form 
+        onSubmit={handleSubmit(onSubmit)}
+        className={signup.form}
+      >
         <div>
           <input 
             type="text" 
             placeholder="Name" 
             {...register("name", {required: true})}
+            className={signup.input}
           />
         </div>
 
@@ -37,19 +49,14 @@ const UserForm = () => {
             type="email" 
             placeholder="Email Address" 
             {...register("email", {required: true})}
+            className={signup.input}
           />
         </div>
 
         <hr className="border-t-2 p-1" />
 
         <div>
-          <select 
-            {...register("Basic Pack - Free", { required: true })}
-          >
-            <option value="basic">Basic Pack Free</option>
-            <option value="pro">Pro Pack $9.99</option>
-            <option value="ultimate">Ultimate Pack $19.99</option>
-          </select>
+          <Dropdown selected={selected} setSelected={setSelected} options={options} />
         </div>
 
         <hr className="border-t-2 p-1" />
@@ -59,6 +66,7 @@ const UserForm = () => {
             type="tel" 
             placeholder="Phone Number" 
             {...register("Phone", {required: true})}
+            className={signup.input}
           />
         </div>
 
@@ -69,6 +77,7 @@ const UserForm = () => {
             type="text" 
             placeholder="Company" 
             {...register("company", {required: true})}
+            className={signup.input}
           />
         </div>
 
@@ -77,10 +86,11 @@ const UserForm = () => {
         <input 
           type="submit" 
           value="Get on the list"
+          className={signup.buttton}
          />
     </form>
   </section>
-  )
+  );
 };
 
 export default UserForm;

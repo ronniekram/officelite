@@ -6,8 +6,8 @@ import { app } from './assets/styles';
 const App = () => {
   return (
     <main className={app.main}>
-      {/* <SignUp /> */}
-      <Landing />
+      <SignUp />
+      {/* <Landing /> */}
     </main>
   )
 };

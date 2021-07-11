@@ -9,7 +9,27 @@ const home = {
   chart: 'absolute w-1/3 top-1/4'
 };
 
+const info = {
+  heading: '',
+  blurb: '',
+};
+
+const signup = {
+  form: '',
+  input: '',
+  select: '',
+  option: '',
+  button: ''
+};
+
+const countdown = {
+
+};
+
 export {
   app, 
-  home
+  home,
+  info,
+  signup,
+  countdown
 }
