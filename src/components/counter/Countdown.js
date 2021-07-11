@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { countdown } from '../../assets/styles';
 
 const Countdown = () => {
   const future = new Date(Date.now() + 2592000000);
+  const futureString = future.toDateString().split(' ').slice(1).join(' ');
 
   const [date, setDate] = useState({
     days: 0,
@@ -10,10 +12,10 @@ const Countdown = () => {
     seconds: 0
   });
 
-  // useEffect(() => {
-  //   setInterval(() => setTime(), 1000)
-  // // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, []);
+  useEffect(() => {
+    setInterval(() => setTime(), 1000)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const setTime = () => {
     if (future) {
@@ -49,24 +51,28 @@ const Countdown = () => {
   };
 
   return (
-    <article>
-      <h1>COMING {future.toDateString().toUpperCase()}</h1>
-      <div>
-        <div>
-          {date.days}
-          <span>days</span>
+    <article className="w-10/12 font-kuhbm">
+      <h1 className="text-base tracking-wider mx-1.5 py-2">COMING  
+        <span className="text-custom-blue-dk px-1">
+        {futureString.toUpperCase()}
+        </span>
+      </h1>
+      <div className="flex flex-row w-3/4">
+        <div className={countdown.time}>
+          <div>{date.days}</div>
+          <div className={countdown.span}>days</div>
         </div>
-        <div>
-          {date.hours}
-          <span>hours</span>
+        <div className={countdown.time}>
+          <div>{date.hours}</div>
+          <div className={countdown.span}>hours</div>
         </div>
-        <div>
-          {date.minutes}
-          <span>minutes</span>
+        <div className={countdown.time}>
+          <div>{date.minutes}</div>
+          <div className={countdown.span}>minutes</div>
         </div>
-        <div>
-          {date.seconds}
-          <span>seconds</span>
+        <div className={countdown.time}>
+          <div>{date.seconds}</div>
+          <div className={countdown.span}>seconds</div>
         </div>
       </div>
     </article>

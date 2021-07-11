@@ -1,5 +1,12 @@
 body {
   font-family: 'Kumbh Sans';
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
+}
+
+#signup {
+  background-image: url(../svgs/sign-up/bg-pattern-side.svg);
+  background-repeat: no-repeat;
+  background-position-x: 48%;
+  background-position-y: 55%;
 }
 

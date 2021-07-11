@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import { Listbox, Transition } from '@headlessui/react';
 import { CheckIcon, SelectorIcon } from '@heroicons/react/solid';
 
@@ -6,7 +6,13 @@ function classNames(...classes){
   return classes.filter(Boolean).join(' ');
 };
 
-const Dropdown = ({options, selected, setSelected }) => {
+const Drop = () => {
+  const options = [
+    {type: 'Basic Pack', cost: 'Free'}, 
+    {type: 'Pro Pack', cost: '$9.99'}, 
+    {type: 'Ultimate Pack', cost: '$19.99'}];
+
+  const [selected, setSelected] = useState(options[0]);
 
   return (
     <div>
@@ -76,4 +82,4 @@ const Dropdown = ({options, selected, setSelected }) => {
   );
 };
 
-export default Dropdown;
+export default Drop;
